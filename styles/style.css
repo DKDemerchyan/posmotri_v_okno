@@ -36,3 +36,105 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+
+  width: 1140px;
+  height: 534px;
+  margin: 133px 30px;
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-gap: 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  margin-top: 78px;
+}
+
+.result__video-container {
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__fieldset {
+  line-height: 22px;
+  border: none;
+}
+
+.search-form__fieldset-title {
+
+}
+
+.search-form__label {
+
+}
+
+.search-form__label-text {
+
+}
+
+.search-form__textfield {
+
+}
+
+.search-form__checkbox-list {
+
+}
+
+.search-form__checkbox {
+
+}
+
+.search-form__pseudo-checkbox {
+
+}
+
+.search-form__label-text {
+
+}
+
+.button {
+
+}
+
+.search-form__submit-button {
+
+}
+
+
+
+
+
+.content__details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.title {
+  margin-right: 139px;
+  font-family: Oswald, serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.content__list {
+  width: 399px;
+  height: 534px;
+  overflow: hidden auto;
+  scrollbar-width: none;
+}

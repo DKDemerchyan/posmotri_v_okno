@@ -63,6 +63,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   margin-bottom: 16px;
 }
@@ -111,19 +112,20 @@ ol {
 }
 
 .search-form__checkbox-list {
- /* Пока не понял зачем. Удалить */
+
 }
 
 .search-form__checkbox {
 
 }
 
-.search-form__pseudo-checkbox {
-
-}
-
-.search-form__label-text {
-
+.search-form__pseudo-checkbox{
+  display: flex;
+  flex-flow: row;
+  width: 19px;
+  height: 19px;
+  background-color: transparent;
+  border: 1px solid #FFF;
 }
 
 .button {
@@ -155,7 +157,12 @@ ol {
   text-transform: uppercase;
 }
 
+.content__accent {
+  color: #545050;
+}
+
 .content__list {
+  position: relative;
   width: 399px;
   height: 534px;
   overflow: hidden auto;
@@ -166,17 +173,36 @@ ol {
   margin: 30px 0;
 }
 
+.content__card-link {
+  color: #fff;
+  text-decoration: none;
+}
+
 .content__video-card {
   display: flex;
   align-items: flex-start;
 }
 
+.content__video-card-description-container {
+  width: 100%;
+}
+
+.content__video-card-title {
+  font-family: Oswald, serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.content__video-card-description {
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-}
-
-.content__video-card-description-container {
-  width: 100%;
 }
 /*  End section content details  */

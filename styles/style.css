@@ -79,7 +79,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  /*align-items: flex-end;*/
   gap: 40px;
 }
 
@@ -136,7 +136,8 @@ ol {
 }
 
 .button {
-  max-height: 34px;
+  min-height: 34px;
+  align-self: flex-end;
   cursor: pointer;
   color: #fff;
   background-color: transparent;

@@ -79,7 +79,6 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  /*align-items: flex-end;*/
   gap: 40px;
 }
 
@@ -118,7 +117,8 @@ ol {
 }
 
 .search-form__checkbox-list {
-
+  display: flex;
+  gap: 15px;
 }
 
 .search-form__checkbox {

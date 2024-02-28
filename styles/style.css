@@ -95,12 +95,21 @@ ol {
   font-weight: 400;
 }
 
-.search-form__label {
-
-}
-
 .search-form__label-text {
 
+}
+/*  TODO: поправить фокус  */
+.search-form__label:active {
+  outline: 1px solid red;
+}
+
+.search-form__label:hover .search-form__label-text{
+  text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #ffffff;
+  outline-offset: 1px;
 }
 
 .search-form__textfield {
@@ -116,13 +125,13 @@ ol {
   appearance: none;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-}
-
-.search-form__checkbox {
-
 }
 
 .search-form__pseudo-checkbox{
@@ -131,8 +140,17 @@ ol {
   width: 19px;
   height: 19px;
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   cursor: pointer;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  display: block;
+  margin: 1px 0 0 1px;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  content: "";
 }
 
 .button {
@@ -146,6 +164,23 @@ ol {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
